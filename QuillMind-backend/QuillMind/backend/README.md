@@ -352,7 +352,10 @@ PDF + Page → /reading/page/ → reading_workflow → reading_service
 
 | Name | Role |
 |---|---|
-| _(Your Name)_ | Full Stack Developer / AI Engineer |
+| _(Ritika Jha)_ | Student 1 |
+| _(Abantika Guin)_ | Student 2 |
+| _(Rajanya Pramanik)_ | Student 3 |
+| _(Riya Prasad)_ | Student 4 |
 
 ---
 
