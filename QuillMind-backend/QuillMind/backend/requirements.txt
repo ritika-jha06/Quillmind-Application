@@ -116,5 +116,6 @@ python-dotenv>=1.0.0
 #transformers>=4.43.0          # Qwen2.5 model class & chat template support
 #accelerate>=0.30.0            # device_map="auto" multi-device distribution
 tokenizers>=0.19.0            # fast tokeniser backend (pulled by transformers)
+numpy>=1.26.0
 #sentencepiece>=0.1.99         # tokeniser dependency for some HF models
 
