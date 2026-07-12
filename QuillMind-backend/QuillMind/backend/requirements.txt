@@ -1,0 +1,120 @@
+# # ============================================================
+# # QuillMind — Python Dependencies
+# # Install with: pip install -r requirements.txt
+# # ============================================================
+
+# # Web Framework
+# fastapi>=0.104.0
+# uvicorn[standard]>=0.24.0
+# python-multipart>=0.0.6
+
+# # Pydantic (data validation)
+# pydantic>=2.0.0
+
+# # ── LLM: Groq (replaces Google Gemini) ───────────────────────
+# # Fast inference for LLaMA 3, Mixtral, and more (free tier available)
+# # Get your API key at: https://console.groq.com
+# groq>=0.9.0
+
+# # Sentence Embeddings & Semantic Search
+# sentence-transformers>=2.2.2
+# torch>=2.1.0
+
+# # NLP — spaCy (MCQ Generator)
+# spacy>=3.7.0
+# # After installing, also run:
+# #   python -m spacy download en_core_web_sm
+
+# # PDF Processing
+# PyPDF2>=3.0.0
+
+# # NLP utilities
+# nltk>=3.8.1
+
+# # Authentication
+# PyJWT>=2.8.0
+
+# # Environment Configuration
+# python-dotenv>=1.0.0
+
+#--------------------------------------------------------------------------------------------
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Pydantic (data validation)
+pydantic>=2.0.0
+
+# ── LLM: Groq ─────────────────────────────────────────────────────────────────
+groq>=0.9.0
+
+# Sentence Embeddings & Semantic Search
+sentence-transformers>=2.2.2
+torch>=2.1.0
+
+# NLP — spaCy (MCQ Generator)
+# spacy>=3.7.0
+# After installing, also run:
+#   python -m spacy download en_core_web_sm
+
+# ── PDF Processing ─────────────────────────────────────────────────────────────
+PyPDF2>=3.0.0
+
+# ── OCR & Image Processing (NEW — for scanned docs, handwriting, screenshots) ──
+# Tesseract OCR wrapper
+pytesseract>=0.3.10
+# System dependency: install Tesseract binary
+#   Ubuntu/Debian:  sudo apt-get install tesseract-ocr
+#   macOS:          brew install tesseract
+#   Windows:        https://github.com/UB-Mannheim/tesseract/wiki
+
+# PDF → image rasterization (for scanned PDFs)
+pdf2image>=1.16.0
+# System dependency: install poppler
+#   Ubuntu/Debian:  sudo apt-get install poppler-utils
+#   macOS:          brew install poppler
+#   Windows:        https://github.com/oschwartz10612/poppler-windows/releases
+
+# Image processing
+Pillow>=10.0.0
+
+# NLP utilities
+nltk>=3.8.1
+
+# Authentication
+PyJWT>=2.8.0
+
+# Environment Configuration
+python-dotenv>=1.0.0
+
+# ── Add these to your requirements.txt ──────────────────────────────────────
+# (Remove spacy and en_core_web_sm references from requirements.txt)
+
+
+# ── One-time NLTK data setup (run once in your environment) ─────────────────
+# python -c "
+# import nltk
+# for pkg in ['punkt','punkt_tab','averaged_perceptron_tagger',
+#             'averaged_perceptron_tagger_eng','stopwords','wordnet','omw-1.4']:
+#     nltk.download(pkg)
+# "
+
+# ── Remove from requirements.txt ────────────────────────────────────────────
+# spacy
+# en_core_web_sm (the spacy model download line)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# QuillMind — Exam Maker: updated/new dependencies for Qwen2.5-3B-Instruct
+# Add these to your existing requirements.txt (replace any Flan-T5 lines).
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Core inference stack
+torch>=2.2.0                  # float16 + device_map support
+transformers>=4.43.0          # Qwen2.5 model class & chat template support
+accelerate>=0.30.0            # device_map="auto" multi-device distribution
+tokenizers>=0.19.0            # fast tokeniser backend (pulled by transformers)
+sentencepiece>=0.1.99         # tokeniser dependency for some HF models
+

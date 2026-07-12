@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Database
+*.db
+
+# Uploads
+QuillMind-backend/uploads_data/
+
+# React
+Quillmind-frontend/node_modules/
+Quillmind-frontend/dist/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
